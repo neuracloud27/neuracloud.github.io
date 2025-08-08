@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NeuraCloud — VMs com GPU acessíveis</title>
+  <meta name="description" content="NeuraCloud — Máquinas virtuais com GPU para desenvolvedores, criadores e gamers. Acesso fácil, preços justos e suporte dedicado.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
+  <style>
+    :root{--bg:#0b0f1a;--card:#0f1724;--accent:#46b3ff;--muted:#9aa6bd;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071028 0%,#081426 100%);color:#e6eef8;-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo .mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6fc8ff);display:flex;align-items:center;justify-content:center;color:#042133;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:flex;gap:40px;align-items:center;padding:40px 0}
+    .hero-left{flex:1}
+    h1{font-size:32px;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 20px;line-height:1.5}
+    .cta{display:inline-block;background:var(--accent);color:#021224;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,8,23,0.6)}
+    .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:28px}
+    footer{border-top:1px solid rgba(255,255,255,0.03);margin-top:40px;padding-top:18px;color:var(--muted)}
+    .pricing{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}
+    .price{background:var(--glass);padding:18px;border-radius:10px;width:220px}
+    .small{font-size:13px;color:var(--muted)}
+    .contact{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px;border-radius:10px}
+    @media(max-width:800px){.hero{flex-direction:column}.logo .mark{width:40px;height:40px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">N</div>
+        <div>
+          <div style="font-weight:800">NeuraCloud</div>
+          <div style="font-size:12px;color:var(--muted)">VMs com GPU · Infraestrutura · IA</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Computação com GPU acessível para quem precisa de potência.</h1>
+        <p class="lead">NeuraCloud fornece máquinas virtuais com GPU prontas para desenvolvimento, criação de conteúdo e jogos — sem contratos longos, com controle por hora e suporte simples.</p>
+        <a class="cta" href="#contato">Peça acesso inicial</a>
+
+        <div class="cards" aria-hidden="true">
+          <div class="card">
+            <div style="font-weight:700">Acesso por hora</div>
+            <div class="small">Pague apenas pelo tempo que usar — 2h, 4h ou 8h por dia.</div>
+          </div>
+          <div class="card">
+            <div style="font-weight:700">Instâncias com GPU</div>
+            <div class="small">NVIDIA T4 / opções econômicas com spot instances.</div>
+          </div>
+          <div class="card">
+            <div style="font-weight:700">Suporte e backups</div>
+            <div class="small">Suporte básico e snapshots periódicos para sua VM.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="flex:0.9">
+        <div style="background:linear-gradient(180deg,#071028, #081426);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,8,23,0.6);">
+          <div style="font-weight:700;margin-bottom:8px">Exemplo rápido</div>
+          <div style="color:var(--muted);font-size:14px">VM: 4 vCPU • 16 GB RAM • GPU T4 • 8h/dia</div>
+          <div style="margin-top:14px;font-size:18px;font-weight:800">Planos a partir de R$ 120/semana</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <h2 style="margin-top:10px">O que oferecemos</h2>
+      <div class="feature-grid">
+        <div class="card">
+          <div style="font-weight:700">Ambiente Pré-configurado</div>
+          <div class="small">Ferramentas comuns já instaladas — Unity, Blender, PyTorch, etc.</div>
+        </div>
+        <div class="card">
+          <div style="font-weight:700">Controle total</div>
+          <div class="small">Acesso via RDP/Remote Desktop com credenciais temporárias.</div>
+        </div>
+        <div class="card">
+          <div style="font-weight:700">Escalabilidade</div>
+          <div class="small">Opções por hora, diárias, semanais e mensais.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos">
+      <h2 style="margin-top:18px">Planos</h2>
+      <div class="pricing">
+        <div class="price">
+          <div style="font-weight:800">Básico</div>
+          <div class="small">2 vCPU • 8 GB • Sem GPU</div>
+          <div style="font-weight:700;margin-top:10px">R$ 60 / semana</div>
+        </div>
+        <div class="price">
+          <div style="font-weight:800">Pro</div>
+          <div class="small">4 vCPU • 16 GB • GPU T4 (8h/dia)</div>
+          <div style="font-weight:700;margin-top:10px">R$ 120 / semana</div>
+        </div>
+        <div class="price">
+          <div style="font-weight:800">Boost</div>
+          <div class="small">8 vCPU • 32 GB • GPU potente</div>
+          <div style="font-weight:700;margin-top:10px">Sob consulta</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:28px">
+      <h2>Fale com a NeuraCloud</h2>
+      <div class="contact">
+        <p class="small">Quer testar uma VM ou tirar dúvidas? Envie uma mensagem — responderemos em até 24h úteis.</p>
+        <form action="mailto:contato@neuracloud.com.br" method="post" enctype="text/plain">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input required placeholder="Seu nome" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
+            <input required type="email" placeholder="Seu e-mail" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
+          </div>
+          <textarea required placeholder="Como podemos ajudar?" style="width:100%;margin-top:8px;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
+          <div style="margin-top:8px"><button class="cta" type="submit">Enviar</button></div>
+        </form>
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">Ou escreva para <a href="mailto:contato@neuracloud.com.br" style="color:var(--accent);text-decoration:none">contato@neuracloud.com.br</a></div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:700">NeuraCloud</div>
+          <div class="small">© NeuraCloud — Todos os direitos reservados</div>
+        </div>
+        <div style="color:var(--muted);font-size:13px">Endereço de contato: contato@neuracloud.com.br</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
